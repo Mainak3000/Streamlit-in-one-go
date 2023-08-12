@@ -13,7 +13,7 @@ if df is not None:
 
 
 st.subheader('Working with Images')
-st.image(r"D:\Study\Python\UserProfile\Streamlit\img.jpg")
+st.image("img.jpg")
 img_file = st.file_uploader("Upload image file : ", type = ['png', 'jpeg', 'jpg'])
 if img_file is not None:
         st.image(img_file)
