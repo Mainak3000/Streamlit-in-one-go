@@ -19,7 +19,7 @@ st.altair_chart(chart)
 st.header('2. Interactive Charts')
 st.subheader('2.1 Line Chart')
 
-df = pd.read_csv(r"D:\Study\Python\UserProfile\Streamlit\lang_data.csv")
+df = pd.read_csv("lang_data.csv")
 lang_list = df.columns.to_list()
 lang_choices = st.multiselect("Choose your language : ", lang_list)
 new_df = df[lang_choices]
@@ -34,7 +34,7 @@ st.area_chart(new_df)
 st.header('3. Data Visualisation with Plotly')
 st.subheader('3.1 Displaying the dataset')
 
-df = pd.read_csv(r"D:\Study\Python\UserProfile\Streamlit\tips.csv")
+df = pd.read_csv("tips.csv")
 st.dataframe(df)
 #--------------------------------------------------------------------------------------------------------------------
 
